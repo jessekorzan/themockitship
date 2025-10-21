@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Free Device Mockups</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+
+  </head>
+  <body>
+    <main>
+      <aside class="control-pane">
+        <div class="control-group">
+          <span class="control-label">Device</span>
+          <select id="device-select" class="device-select" aria-label="Choose device"></select>
+        </div>
+        <div class="control-group">
+          <span class="control-label">Workspace View</span>
+          <div class="view-select-wrapper" id="view-select-wrapper" hidden>
+            <select id="view-select" class="view-select" aria-label="Choose view mode">
+              <option value="2d">2D Canvas</option>
+              <option value="3d">3D Viewer</option>
+            </select>
+          </div>
+        </div>
+        <header>
+          <h1>Free Device Mockups</h1>
+          <p class="descriptor">
+            Select a device, upload artwork, and export a pixel-perfect PNG mockup.
+          </p>
+        </header>
+        <div class="control-actions">
+          <div id="screen-dimensions" class="screen-dimensions"></div>
+          <label for="image-input">
+            <span>Upload image</span>
+            <input id="image-input" type="file" accept="image/*" />
+          </label>
+        </div>
+        <div class="download-actions">
+          <button id="download-button" class="download-button" type="button" disabled>
+            Download PNG
+          </button>
+          <button id="copy-button" class="copy-button" type="button" disabled>
+            Copy to Clipboard
+          </button>
+        </div>
+      </aside>
+      <section class="workspace">
+        <div class="workspace-bar">
+        </div>
+        <div class="canvas-stage">
+          <div class="canvas-wrapper" id="mockup-dropzone">
+            <canvas id="mockup-canvas" aria-label="Device mockup preview"></canvas>
+            <model-viewer
+              id="mockup-model-viewer"
+              camera-controls
+              auto-rotate
+              rotation-per-second="10deg"
+              exposure="1.2"
+              shadow-intensity="0.3"
+              camera-orbit="0deg 75deg 105%"
+              min-camera-orbit="auto auto 50%"
+              max-camera-orbit="auto auto 200%"
+              field-of-view="30deg"
+            ></model-viewer>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>
