@@ -3,7 +3,8 @@ https://mockitship.com
 
 ![Device Mockup Kit](imac-3d-mockup.png)
 
-## "You can just paste with the keyboard onto the canvas. Baller." - Jeff Schmetsky, Mockstar
+>"You can just paste with the keyboard onto the canvas. Baller."
+Jeff Schmetsky, Mockstar
 
 **Create stunning device mockups in seconds.** Drop in your designs, download pixel-perfect PNGs. No accounts, no watermarks, no BS.
 
