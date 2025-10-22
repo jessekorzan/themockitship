@@ -1,6 +1,22 @@
-# Device Mockup Studio
+# Device Mockup Kit
+https://mockitship.com
 
-A web application for creating professional device mockups with 2D canvas rendering and 3D model viewer support.
+![Device Mockup Kit](imac-3d-mockup.png)
+
+**Create stunning device mockups in seconds.** Drop in your designs, download pixel-perfect PNGs. No accounts, no watermarks, no BS.
+
+## Why This Exists
+
+Tired of bloated mockup tools that require subscriptions, watermark your work, or limit exports? This app is **100% free, open source, and yours to hack on.** Fork it, customize it, add your own devices, or integrate it into your workflow. Built with vanilla JavaScript and modern web APIs—no frameworks to wrestle with.
+
+**Perfect for:**
+- 🎨 Designers showcasing UI work
+- 📱 Product teams creating marketing materials
+- 🛠️ Developers building custom mockup generators
+- 🎓 Students learning 3D web graphics
+- 🚀 Anyone who needs quick, professional mockups
+
+A web application for creating professional device mockups with 2D canvas rendering and 3D model viewer support. 
 
 ## Features
 
@@ -166,9 +182,12 @@ Colors use normalized RGB: `[r, g, b, a]` where values are 0-1
 - **JavaScript**: ES6 Modules, async/await
 
 ## License
-
-[Add your license here]
+This project is released under the [MIT License](LICENSE).  
+You are free to use, modify, and distribute it for any purpose.
 
 ## Credits
+"Iphone 17 pro" (https://skfb.ly/pzYOR) by Ibrahim.Bhl is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-Built for creating professional device mockups with ease.
+"macbook pro M3 16 inch 2024" (https://skfb.ly/oQJZu) by jackbaeten is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+"iMac 2021" (https://skfb.ly/o6poS) by DatSketch is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
