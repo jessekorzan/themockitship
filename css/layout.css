@@ -29,6 +29,7 @@ main {
   padding: 32px 48px 48px 48px;
   display: flex;
   flex-direction: column;
+  background: #f9fafc;
 }
 
 .workspace-bar {
@@ -48,25 +49,25 @@ main {
 }
 
 .canvas-wrapper {
-  position: absolute;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #f9fafc;
-  /* border-radius: 32px; */
+  background: #fff;
+  border-radius: 32px;
   /* padding: 40px; */
+   /* position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  /* width: clamp(320px, 60vw, 520px);
+  bottom: 0; */
+  /* width: clamp(320px, 60vw, 520px); */
   height: clamp(200px, 80vh, 80vh);
 
-  aspect-ratio: 1; */
-  /* box-shadow: inset 0 0 0 1px rgba(15, 15, 15, 0.06),
-    0 28px 70px rgba(15, 15, 15, 0.12); */
+  aspect-ratio: 1; 
+  box-shadow: 0 28px 70px rgba(15, 15, 15, 0.06);
   overflow: hidden;
 }
 
@@ -125,7 +126,9 @@ model-viewer {
   }
 
   .canvas-wrapper {
-    width: 100%
-    height: auto;
+    display: block;
+    width: 100%;
+    height: 100;
+    aspect-ratio: auto;
   }
 }

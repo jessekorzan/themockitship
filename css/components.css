@@ -37,8 +37,8 @@ h1 {
   appearance: none;
   border: 1px solid rgba(0, 0, 0, 0.18);
   border-radius: 8px;
-  padding: 14px 16px;
-  font-size: 16px;
+ padding: 12px 40px 12px 16px;
+  font-size: 15px;
   font-weight: 500;
   background: #fff url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.59 0.585999L6 5.172L1.41 0.585999L0 2L6 8L12 2L10.59 0.585999Z' fill='%231D1D1F'/%3E%3C/svg%3E")
     no-repeat right 16px center/12px 8px;
