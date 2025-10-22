@@ -181,6 +181,9 @@ Colors use normalized RGB: `[r, g, b, a]` where values are 0-1
 - **Styling**: Modern CSS (Grid, Flexbox, Custom Properties)
 - **JavaScript**: ES6 Modules, async/await
 
+
+![Features](mockitship.001.gif)
+
 ## License
 This project is released under the [MIT License](LICENSE).  
 You are free to use, modify, and distribute it for any purpose.
