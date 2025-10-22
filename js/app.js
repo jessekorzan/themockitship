@@ -93,10 +93,25 @@ function setupEventListeners() {
     if (viewMode === "3d" && modelViewer) {
       // Download from 3D viewer
       try {
+        // Store current camera state
+        const currentOrbit = modelViewer.getCameraOrbit();
+
+        // Zoom out slightly to ensure full model is captured
+        const orbit = modelViewer.getCameraOrbit();
+        orbit.radius *= 1.15; // Zoom out by 15%
+        modelViewer.cameraOrbit = `${orbit.theta}rad ${orbit.phi}rad ${orbit.radius}m`;
+
+        // Wait for camera to update
+        await modelViewer.updateComplete;
+
         const blob = await modelViewer.toBlob({
           idealAspect: true,
           mimeType: "image/png",
         });
+
+        // Restore original camera state
+        modelViewer.cameraOrbit = `${currentOrbit.theta}rad ${currentOrbit.phi}rad ${currentOrbit.radius}m`;
+
         link.href = URL.createObjectURL(blob);
         link.download = `${fileBase}-3d-mockup.png`;
         link.click();
