@@ -9,7 +9,7 @@ export const DEVICE_LIBRARY = [
     name: "iPhone 17 Pro",
     folder: "devices/iPhone 17 Pro ",
     assetPrefix: "iphone-17-pro",
-    chromeOffset: 253,
+    chromeOffset: 100,
     screenWidth: 402,
     screenHeight: 874,
     modelPath: "devices/iPhone 17 Pro /iphone-17-pro/source/iphone 17_4.glb",
